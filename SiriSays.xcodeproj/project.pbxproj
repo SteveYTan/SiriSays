@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		83138DF81B84079E007B77FE /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83138DF71B84079E007B77FE /* Database.swift */; };
+		83138DFA1B840D4E007B77FE /* languageClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83138DF91B840D4E007B77FE /* languageClass.swift */; };
+		83138DFC1B8411EA007B77FE /* libraryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83138DFB1B8411EA007B77FE /* libraryViewController.swift */; };
 		836462561B83DAEF00BE2537 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836462551B83DAEF00BE2537 /* AppDelegate.swift */; };
 		836462581B83DAEF00BE2537 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836462571B83DAEF00BE2537 /* ViewController.swift */; };
 		8364625B1B83DAEF00BE2537 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 836462591B83DAEF00BE2537 /* Main.storyboard */; };
@@ -34,6 +37,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		83138DF71B84079E007B77FE /* Database.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
+		83138DF91B840D4E007B77FE /* languageClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = languageClass.swift; sourceTree = "<group>"; };
+		83138DFB1B8411EA007B77FE /* libraryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = libraryViewController.swift; sourceTree = "<group>"; };
 		836462521B83DAEF00BE2537 /* SiriSays.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SiriSays.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		836462551B83DAEF00BE2537 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		836462571B83DAEF00BE2537 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -99,7 +105,10 @@
 			children = (
 				836462551B83DAEF00BE2537 /* AppDelegate.swift */,
 				836462571B83DAEF00BE2537 /* ViewController.swift */,
+				83138DFB1B8411EA007B77FE /* libraryViewController.swift */,
+				83138DF91B840D4E007B77FE /* languageClass.swift */,
 				836462591B83DAEF00BE2537 /* Main.storyboard */,
+				83138DF71B84079E007B77FE /* Database.swift */,
 				8364625C1B83DAEF00BE2537 /* Assets.xcassets */,
 				8364625E1B83DAEF00BE2537 /* LaunchScreen.storyboard */,
 				836462611B83DAEF00BE2537 /* Info.plist */,
@@ -187,18 +196,21 @@
 		8364624A1B83DAEF00BE2537 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0700;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "Steve T";
 				TargetAttributes = {
 					836462511B83DAEF00BE2537 = {
 						CreatedOnToolsVersion = 7.0;
+						LastSwiftMigration = 0820;
 					};
 					836462651B83DAEF00BE2537 = {
 						CreatedOnToolsVersion = 7.0;
+						LastSwiftMigration = 0820;
 						TestTargetID = 836462511B83DAEF00BE2537;
 					};
 					836462701B83DAEF00BE2537 = {
 						CreatedOnToolsVersion = 7.0;
+						LastSwiftMigration = 0820;
 						TestTargetID = 836462511B83DAEF00BE2537;
 					};
 				};
@@ -255,6 +267,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83138DFA1B840D4E007B77FE /* languageClass.swift in Sources */,
+				83138DF81B84079E007B77FE /* Database.swift in Sources */,
+				83138DFC1B8411EA007B77FE /* libraryViewController.swift in Sources */,
 				836462581B83DAEF00BE2537 /* ViewController.swift in Sources */,
 				836462561B83DAEF00BE2537 /* AppDelegate.swift in Sources */,
 			);
@@ -324,8 +339,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -347,7 +364,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -369,8 +386,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -386,9 +405,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -399,9 +419,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SiriSays/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = NS.SiriSays;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -410,9 +432,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SiriSays/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = NS.SiriSays;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -424,6 +448,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = NS.SiriSaysTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SiriSays.app/SiriSays";
 			};
 			name = Debug;
@@ -436,6 +461,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = NS.SiriSaysTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SiriSays.app/SiriSays";
 			};
 			name = Release;
@@ -447,6 +473,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = NS.SiriSaysUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = SiriSays;
 				USES_XCTRUNNER = YES;
 			};
@@ -459,6 +486,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = NS.SiriSaysUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = SiriSays;
 				USES_XCTRUNNER = YES;
 			};
@@ -483,6 +511,7 @@
 				8364627C1B83DAEF00BE2537 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8364627D1B83DAEF00BE2537 /* Build configuration list for PBXNativeTarget "SiriSaysTests" */ = {
 			isa = XCConfigurationList;
@@ -491,6 +520,7 @@
 				8364627F1B83DAEF00BE2537 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		836462801B83DAEF00BE2537 /* Build configuration list for PBXNativeTarget "SiriSaysUITests" */ = {
 			isa = XCConfigurationList;
@@ -499,6 +529,7 @@
 				836462821B83DAEF00BE2537 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
